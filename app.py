@@ -53,7 +53,7 @@ def prediction():
 @app.route("/charts", methods=["GET", "POST"])
 def charts():
     url_arg = request.args.get("news", "")
-    pattern = r"(?:http://)?\\w+\\.\\S*[^.\\s]"
+    pattern = r"(?:http://)?\w+\.\S*[^.\s]"
     input_data = re.findall(pattern, url_arg)
 
     if input_data:
