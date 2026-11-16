@@ -1,13 +1,11 @@
 # Dataset
 
-The original project CSV contains 5,457 URL records, 87 extracted URL-characteristic columns, the URL column, and the classification label. It is included as `upload.csv.gz` in this folder to reduce repository size.
+The original RAR archive contained a CSV with 5,457 URL records, 87 extracted URL-characteristic columns, a `url` field, and a `status` classification label. The CSV itself is not included in this GitHub upload.
 
-To extract it, use:
+Download the dataset from the source used for this project:
 
-```bash
-gzip -dk dataset/upload.csv.gz
-```
+https://www.kaggle.com/datasets/jayaprakashpondy/hacking-breaches-dataset
 
-This creates `dataset/upload.csv`. The notebook can also read the compressed `.csv.gz` directly.
+Save the downloaded CSV in this folder as `upload.csv`.
 
-The training notebook follows the source project's actual pipeline: it selects the `url` column and `status` label, then applies TF-IDF. Although the dataset contains 87 engineered feature columns, those columns are not used by the supplied notebook's classifier.
+The source notebook's actual training pipeline uses only `url` as the input text and `status` as the target. The 87 engineered feature columns are present in the CSV but are not used by that notebook's classifier.
