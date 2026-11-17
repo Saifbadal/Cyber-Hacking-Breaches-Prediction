@@ -1,6 +1,0 @@
-scikit-learn==1.2.2
-Flask==2.3.2
-matplotlib==3.7.1
-pandas==2.0.0
-numpy==1.23.5
-pymsgbox==1.0.9
